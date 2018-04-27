@@ -1,17 +1,13 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-import styled from 'styled-components'
+import React, { Component } from 'react';
 
-class SingleCreatures extends Component {
-    render(){
-     return(
-         <div>
-         Hello
-         </div>
-     )
-         
-     
-}
+class SingleCreature extends Component {
+  render() {
+    return (
+      <div>
+        <h1>One Creature</h1>
+      </div>
+    );
+  }
 }
 
-export default SingleCreatures
+export default SingleCreature;

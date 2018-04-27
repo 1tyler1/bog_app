@@ -4,7 +4,13 @@ const mongoose = require('mongoose')
 const { Creature } = require('./schema')
 
 mongoose.Promise = global.Promise
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGO_URI)
+    .then(connection => {
+        console.log('Connected to MongoDB')
+    })
+    .catch(error => {
+      console.log(error.message)
+     })
 
 const db = mongoose.connection
 
